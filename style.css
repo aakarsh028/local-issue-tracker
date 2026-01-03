@@ -1,0 +1,189 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    padding: 20px;
+}
+h1 {
+    text-align:center;
+}
+.top-buttons{
+    text-align:center;
+    margin-bottom:20px;
+}
+.top-buttons a{
+    text-decoration:none;
+    background-color: #007bff;
+    color:white;
+    padding: 10px 15px;
+    margin: 5px;
+    border-radius: 5px;
+}
+.issue-card{
+    background-color: white;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 6px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0,1);
+}
+.status{
+    font-weight: bold;
+}
+.Pending {color: orange;}
+.InProgress {color: blue;}
+.Resolved{color: green;}
+.Overdue{color: red;}
+
+button{
+    padding: 8px 12px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 8px;
+}
+button:hover {
+    background-color: #218838;
+}
+.issue-card {
+  position: relative;
+}
+.issue-time {
+  position: absolute;
+  top: 10px;
+  right: 12px;
+  font-size: 18px;
+  color: #090909;
+}
+.summary-bar {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.summary-item {
+  padding: 10px 14px;
+  border-radius: 6px;
+  font-weight: 600;
+  background: #f5f5f5;
+}
+
+.summary-item.pending {
+  color: #f26100;
+}
+
+.summary-item.in-progress {
+  color: #0b5ed7;
+}
+
+.summary-item.resolved {
+  color: #006234;
+}
+
+.summary-item.total {
+  color: #000000;
+}
+* {
+  box-sizing: border-box;
+  font-family: "Inter", "Segoe UI", sans-serif;
+}
+
+body {
+  margin: 0;
+  background: #f4f6f8;
+  min-height: 100vh;
+}
+.page-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 20px;
+}
+.form-card {
+  background: #ffffff;
+  width: 100%;
+  max-width: 420px;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+}
+.form-title {
+  text-align: center;
+  margin-bottom: 25px;
+  font-size: 24px;
+  font-weight: 600;
+  color: #333;
+}
+form input,
+form select,
+form textarea {
+  width: 100%;
+  padding: 12px 14px;
+  margin-bottom: 15px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 15px;
+}
+
+form textarea {
+  min-height: 90px;
+  resize: vertical;
+}
+
+form input:focus,
+form select:focus,
+form textarea:focus {
+  outline: none;
+  border-color: #2563eb;
+}
+.submit-btn {
+  width: 100%;
+  padding: 12px;
+  background: #16a34a;
+  color: white;
+  font-size: 16px;
+  font-weight: 600;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.submit-btn:hover {
+  background: #15803d;
+}
+.back-btn {
+display: inline-block;
+margin-bottom: 8px;
+padding: 10px 16px;
+background: #2563eb;
+color: white;
+text-decoration: none;
+font-weight: 400;
+border-radius: 19px;
+transition: background 0.2s ease;
+}
+.back-btn:hover{
+    background: #1e4ed8;
+}
+h1{
+    margin-bottom: 8px;
+}
+h3{
+    margin-top: 0px;
+}
+
+.back-btn1{
+    display: inline-block;
+    margin-bottom: 1px;
+    padding: 10px 16px;
+    border-radius: 19px;
+    background-color: #333;
+    color:#ffffff;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 400;
+}
+.back-btn1:hover{
+    text-decoration: underline;
+}
