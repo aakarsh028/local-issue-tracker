@@ -1,3 +1,5 @@
+let currentSearchText = "";
+
 function timeAgo(timestamp) {
   const seconds = Math.floor((Date.now() - timestamp) / 1000);
 
@@ -72,26 +74,28 @@ const form = document.getElementById("issueForm");
 
 if (form) {
   form.addEventListener("submit", function (e) {
-    e.preventDefault();
+  e.preventDefault();
+  console.log("SUBMIT CLICKED");
 
-    const newIssue = {
-      id: Date.now(),
-      title: document.getElementById("title").value,
-      category: document.getElementById("category").value,
-      location: document.getElementById("location").value,
-      description: document.getElementById("description").value,
-      status: "Pending",
-      createdAt: Date.now()
-    };
+  const newIssue = {
+    id: Date.now(),
+    title: document.getElementById("title").value,
+    category: document.getElementById("category").value,
+    location: document.getElementById("location").value,
+    description: document.getElementById("description").value,
+    status: "Pending",
+    createdAt: Date.now()
+  };
 
-    issues.unshift(newIssue);
-    localStorage.setItem("issues", JSON.stringify(issues));
+  issues.unshift(newIssue);
+  localStorage.setItem("issues", JSON.stringify(issues));
 
-    setTimeout(() => {
+  const reportSection = document.getElementById("reportSection");
+  const successMessage = document.getElementById("successMessage");
 
-    window.location.replace("index.html");
-  },200);
-});
-}
-
-setInterval(displayIssues, 1000);
+  if (reportSection)
+    reportSection.style.display = "none";
+  if (successMessage)
+    successMessage.style.display = "flex";
+  })
+};
