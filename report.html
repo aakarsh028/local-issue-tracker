@@ -8,11 +8,9 @@
 <div class="page-wrapper">
     <div class="form-card">
       <a href="index.html" class="back-btn1">Back</a>
+
   <h1>Report an Issue</h1>
-
   <form id="issueForm" onsubmit="return false;">
-
-
     <input type="text" id="title" placeholder="Issue Title" required><br><br>
 
     <select id="category">
@@ -24,11 +22,17 @@
     </select><br><br>
 
     <input type="text" id="location" placeholder="Location" required><br><br>
-
     <textarea id="description" placeholder="Describe the issue" required></textarea><br><br>
-
-    <button type="submit">Submit Issue</button>
+    <button type="submit">Submit Issue</button> 
   </form>
+</div>
+
+<div id="successMessage"
+style="display:none;">
+<div class = "success-card">
+<h3>✅ Issue submitted successfully</h3>
+<p>The displayed issue has been reported to the concerned authority. Please check the home page for status updates.</p>
+</div></div>
 
   <script src="app.js"></script>
 </body>
