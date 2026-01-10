@@ -1,6 +1,6 @@
 body {
     font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
+    background-color: #e25858;
     padding: 20px;
 }
 h1 {
@@ -12,7 +12,7 @@ h1 {
 }
 .top-buttons a{
     text-decoration:none;
-    background-color: #007bff;
+    background-color: #2763a3;
     color:white;
     padding: 10px 15px;
     margin: 5px;
@@ -46,6 +46,14 @@ button:hover {
     background-color: #218838;
 }
 .issue-card {
+  background:white;
+  border-radius: 14px;
+  padding: 18px;
+  min-height: 170px;
+  min-width: 400px;
+  margin: 16px auto;
+  max-width: 850px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.6);
   position: relative;
 }
 .issue-time {
@@ -58,6 +66,7 @@ button:hover {
 .summary-bar {
   display: flex;
   gap: 15px;
+  justify-content: center;
   margin-bottom: 20px;
 }
 
@@ -69,19 +78,24 @@ button:hover {
 }
 
 .summary-item.pending {
-  color: #f26100;
+  color: #fdfdfd;
+  background-color: #f26100;
 }
 
 .summary-item.in-progress {
-  color: #0b5ed7;
+  color: #ffffff;
+  background-color: #ad8b00;
 }
 
 .summary-item.resolved {
-  color: #006234;
+  color: #f5f5f5;
+  background-color: #056714 ;
 }
 
 .summary-item.total {
-  color: #000000;
+  color: #f4f4f4;
+  background-color: #2bbacd;
+  /*margin-left: 350px;*/
 }
 * {
   box-sizing: border-box;
@@ -91,6 +105,7 @@ button:hover {
 body {
   margin: 0;
   background: #f4f6f8;
+  background:url("images/picpic3.jpg")center/cover no-repeat fixed;
   min-height: 100vh;
 }
 .page-wrapper {
@@ -156,15 +171,13 @@ form textarea:focus {
 display: inline-block;
 margin-bottom: 8px;
 padding: 10px 16px;
-background: #2563eb;
+background: #5304ff;
 color: white;
 text-decoration: none;
 font-weight: 400;
 border-radius: 19px;
 transition: background 0.2s ease;
-}
-.back-btn:hover{
-    background: #1e4ed8;
+
 }
 h1{
     margin-bottom: 8px;
@@ -178,7 +191,7 @@ h3{
     margin-bottom: 1px;
     padding: 10px 16px;
     border-radius: 19px;
-    background-color: #333;
+    background-color: #1b69d7;
     color:#ffffff;
     text-decoration: none;
     font-size: 14px;
@@ -186,4 +199,58 @@ h3{
 }
 .back-btn1:hover{
     text-decoration: underline;
+}
+.success-card {
+  max-width: 500px;
+  margin: 40px auto;
+  padding: 30px;
+  background: #f0fff4;
+  border: 2px solid #28a745;
+  border-radius: 12px;
+  text-align: center;
+}
+
+.success-card h2 {
+  color: #1e7e34;
+  margin-bottom: 10px;
+}
+
+.success-card p {
+  color: #333;
+  margin-bottom: 20px;
+}
+#successMessage{
+  display:none;
+  justify-content: center;
+  align-items: center;
+  min-height: 80vh;
+}
+.success-card{
+  background: #e9f9ef;
+  border: 2px solid #2ecc71;
+  padding: 30px;
+  border-radius: 12px;
+  text-align: center;
+}
+.header{
+  text-align: center;
+  padding: 20px;
+  background: linear-gradient(135deg, #f8f9ff, #eef2ff);
+  border-radius: 12px;
+  margin-bottom: 20px;
+}
+/* ===== Issue List Grid Layout ===== */
+#issueList {
+  display:grid;
+  grid-template-columns: repeat(2, minmax(320px, 1fr));
+  gap: 24px;
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 0 20px;
+}
+/* ===== Mobile View: 1 card per row ===== */
+@media (max-width: 900px) {
+  #issueList {
+    grid-template-columns: 1fr;
+  }
 }
