@@ -10,8 +10,7 @@ A community-driven platform where citizens can report local issues and authoriti
 
 ## Tech Stack
 - HTML, CSS, JavaScript
-- Google Firebase Hosting (for deployment)
-- Google Gemini (for issue summarization & prioritization – demo/concept)
+- Google Firebase Hosting (future scope)
 
 ## How to Run Locally
 Open `index.html` using a local server (VS Code Live Server recommended).
